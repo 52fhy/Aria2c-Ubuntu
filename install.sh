@@ -1,17 +1,15 @@
-#/bin/bash
+#!/bin/bash
 
+cd ~
+mkdir aria2 && cd aria2
+wget https://gitee.com/52fhy/Aria2c-Ubuntu/raw/main/aria2.conf
 sed -i "s#/tmp#${HOME}/下载#g" aria2.conf
-sed -i "s#User=root#User=${USER}#g" aria2.service
+touch aria2.session
 
-sudo mkdir /etc/aria2/
-sudo touch /etc/aria2/aria2.session
+echo "aria2cd='nohup /usr/bin/aria2c --conf-path=${HOME}/aria2.conf &'" >> ~/.profile
+source ~/.profile
 
-sudo cp aria2.conf /etc/aria2/aria2.conf
 
-sudo cp aria2.service /etc/systemd/system/aria2.service
-
-sudo systemctl enable aria2
-sudo systemctl start aria2
 
 
 
