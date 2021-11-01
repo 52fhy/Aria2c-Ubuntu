@@ -10,8 +10,8 @@ sudo cp aria2.conf /etc/aria2/aria2.conf
 
 sudo cp aria2.service /etc/systemd/system/aria2.service
 
-systemctl enable aria2
-systemctl start aria2
+sudo systemctl enable aria2
+sudo systemctl start aria2
 
 
 
