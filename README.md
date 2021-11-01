@@ -37,7 +37,8 @@ aria2c -i uris.txt
 
 本方式需要配置RPC参数，配置文件一般是aria2.conf。
 
-配置文件下载：
+配置文件下载：https://gitee.com/52fhy/Aria2c-Ubuntu/raw/main/aria2.conf  
+
 
 需要将配置文件里的下载路径修改下，默认是`/tmp`：
 ``` bash
@@ -130,5 +131,4 @@ https://github.com/mayswind/AriaNg/releases/download/1.2.3/AriaNg-1.2.3-AllInOne
 插件地址：https://chrome.google.com/webstore/detail/%E6%B7%BB%E5%8A%A0%E5%88%B0aria2/nimeojfecmndgolmlmjghjmbpdkhhogl/related?hl=zh-CN
 
 后续就可以使用aria2接替浏览器的下载功能。
-
 
